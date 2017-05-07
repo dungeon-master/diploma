@@ -41,6 +41,10 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -55,27 +59,44 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlExtension.cs" />
-    <Compile Include="DbEntities\LibraryLog\book_distribution_event.cs" />
-    <Compile Include="DbEntities\LibraryLog\book_search_event.cs" />
+    <Compile Include="Analyzers\ClusterAnalyzer.cs" />
+    <Compile Include="Enums\BackgroundWorkerState.cs" />
+    <Compile Include="DbEntities\book_distribution_event.cs" />
+    <Compile Include="DbEntities\book_search_event.cs" />
+    <Compile Include="DbEntities\ExternalCatalog.cs" />
+    <Compile Include="DbModels\ExternalCatalogModel.cs" />
+    <Compile Include="DbEntities\description_title.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbEntities\LibraryLog\FrontOfficeAction.cs" />
-    <Compile Include="DbEntities\LibraryLog\FrontOfficeSession.cs" />
-    <Compile Include="DbEntities\LibraryLog\FrontOfficeVisitor.cs" />
-    <Compile Include="Models\LibraryLogModel.cs" />
-    <Compile Include="NGramAnalyzer.cs" />
+    <Compile Include="DbEntities\FrontOfficeAction.cs" />
+    <Compile Include="DbEntities\FrontOfficeSession.cs" />
+    <Compile Include="DbEntities\FrontOfficeVisitor.cs" />
+    <Compile Include="DbModels\LibraryLogModel.cs" />
+    <Compile Include="Analyzers\NGramAnalyzer.cs" />
+    <Compile Include="DbModels\SearchArrayModel.cs" />
+    <Compile Include="Models\ExternalCatalogBook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ActionAnalyzer.cs" />
-    <Compile Include="SearchFields.cs" />
-    <Compile Include="SearchRequest.cs" />
+    <Compile Include="Analyzers\ActionAnalyzer.cs" />
+    <Compile Include="Models\SearchFields.cs" />
+    <Compile Include="Models\SearchRequest.cs" />
+    <Compile Include="Proxy\CatalogProxy.cs" />
+    <Compile Include="Proxy\ExternalCatalogProxy.cs" />
+    <Compile Include="Workers\ActionAnalyzerWorker.cs" />
+    <Compile Include="Workers\Callbacks.cs" />
+    <Compile Include="Workers\CatalogCheckerWorker.cs" />
+    <Compile Include="Workers\ClusterAnalyzerWorker.cs" />
+    <Compile Include="Workers\ExternalCatalogReaderWorker.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

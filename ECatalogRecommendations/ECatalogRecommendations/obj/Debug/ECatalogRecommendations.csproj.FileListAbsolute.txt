@@ -6,8 +6,12 @@ C:\Антон\Программы\12 семестр (finish him)\Диплом\ECa
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\EntityFramework.xml
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\EntityFramework.SqlServer.xml
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.csprojResolveAssemblyReference.cache
-C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.Form1.resources
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.Properties.Resources.resources
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.csproj.GenerateResource.Cache
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.exe
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.pdb
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Newtonsoft.Json.dll
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Zlib.Portable.dll
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Newtonsoft.Json.xml
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Zlib.Portable.xml
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.MainForm.resources

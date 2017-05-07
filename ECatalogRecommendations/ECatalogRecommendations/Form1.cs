@@ -1,119 +1,172 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Data.Entity;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
+using ECatalogRecommendations.Analyzers;
+using ECatalogRecommendations.Enums;
+using ECatalogRecommendations.Models;
+using ECatalogRecommendations.Proxy;
+using ECatalogRecommendations.Workers;
 
 namespace ECatalogRecommendations
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private readonly ActionAnalyzer _actionAnalyzer = new ActionAnalyzer();
+        private readonly ActionAnalyzerWorker _actionAnalyzerWorker;
+        private readonly ExternalCatalogReaderWorker _externalCatalogReaderWorker;
+        private readonly ClusterAnalyzerWorker _clusterAnalyzerWorker;
+        private readonly CatalogCheckerWorker _catalogCheckerWorker;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 
-            _worker.WorkerReportsProgress = true;
-            _worker.WorkerSupportsCancellation = true;
-            _worker.DoWork += new DoWorkEventHandler(bw_DoWork);
-            _worker.ProgressChanged += new ProgressChangedEventHandler(bw_ProgressChanged);
-            _worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bw_RunWorkerCompleted);
+            _actionAnalyzerWorker = new ActionAnalyzerWorker(UpdateProgressBar);
+            _externalCatalogReaderWorker = new ExternalCatalogReaderWorker(UpdateProgressBar);
+            _clusterAnalyzerWorker = new ClusterAnalyzerWorker(InitProgressBar, UpdateProgressBar);
+            _catalogCheckerWorker = new CatalogCheckerWorker(InitProgressBar, UpdateProgressBar);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            if (!_worker.IsBusy)
+            label1.Text = "Initializing";
+            progressBar.Style = ProgressBarStyle.Marquee;
+            _actionAnalyzerWorker.RunWorker();
+        }
+
+        private void InitProgressBar(int maximum)
+        {
+            progressBar.Minimum = 0;
+            progressBar.Maximum = maximum;
+            progressBar.Value = 0;
+        }
+
+        private void UpdateProgressBar(int progress, BackgroundWorkerState state)
+        {
+            switch (state)
             {
-                int size;
-                using (var db = new LibraryLogModel())
+                case BackgroundWorkerState.ActionAnalyzerInitialize:
                 {
-                    size = db.FrontOfficeAction.Count();
+                    InitProgressBar(progress);
+                    break;
                 }
-                progressBar.Minimum = 0;
-                progressBar.Maximum = size;
-                _worker.RunWorkerAsync();
-            }
-        }
-
-        private void bw_DoWork(object sender, DoWorkEventArgs e)
-        {
-            BackgroundWorker worker = sender as BackgroundWorker;
-
-            if (worker == null)
-            {
-                return;
-            }
-
-            worker.ReportProgress(-1);
-            using (var db = new LibraryLogModel())
-            {
-                int count = 0;
-                var table = db.FrontOfficeAction.AsNoTracking()
-                    .OrderBy(s => s.FrontOfficeSessionId)
-                    .ThenBy(d => d.ActionDateTime);
-                foreach (var row in table)
+                case BackgroundWorkerState.ExternalCatalogInitialize:
                 {
-                    if (worker.CancellationPending)
-                    {
-                        e.Cancel = true;                                          
-                        return;
-                    }
-                    count++;
-                    _actionAnalyzer.AnalyzeAction(row);
-                    if (count % 1000 == 0)
-                    {
-                        worker.ReportProgress(count);
-                    }
+                    InitProgressBar(progress);
+                    break;
                 }
-            }
-        }
-
-        private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            int progress = e.ProgressPercentage;
-            if (progress == -1)
-            {
-                label1.Text = "Initializing";
-                progressBar.Style = ProgressBarStyle.Marquee;
-            }
-            else
-            {
-                label1.Text = e.ProgressPercentage.ToString();
-                progressBar.Style = ProgressBarStyle.Continuous;
-                progressBar.Value = e.ProgressPercentage;
-            }
-        }
-
-        private void bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (e.Cancelled)
-            {
-                label1.Text = "Canceled!";
-            }
-            else if (e.Error != null)
-            {
-                label1.Text = "Error: " + e.Error.Message;
-            }
-            else
-            {
-                label1.Text = "Done! Total = " + _actionAnalyzer.GetResult().Count;
+                case BackgroundWorkerState.ActionAnalyzerReportProgress:
+                {
+                    label1.Text = progress.ToString();
+                    progressBar.Style = ProgressBarStyle.Continuous;
+                    progressBar.Value = progress;
+                    break;
+                }
+                case BackgroundWorkerState.ExternalCatalogReportProgress:
+                {
+                    label1.Text = progress.ToString();
+                    progressBar.Style = ProgressBarStyle.Continuous;
+                    progressBar.Value = progress;
+                    break;
+                }
+                case BackgroundWorkerState.ClusterAnalyzerReportProgress:
+                {
+                    label1.Text = progress.ToString();
+                    progressBar.Style = ProgressBarStyle.Continuous;
+                    progressBar.Value = progress;
+                    break;
+                }
+                case BackgroundWorkerState.CatalogCheckerReportProgress:
+                {
+                    label1.Text = progress.ToString();
+                    progressBar.Style = ProgressBarStyle.Continuous;
+                    progressBar.Value = progress;
+                    break;
+                }
+                case BackgroundWorkerState.ActionAnalyzerDone:
+                {
+                    progressBar.Value = progressBar.Maximum;
+                    label1.Text = "ActionAnalyzerDone! Total = " + _actionAnalyzerWorker.GetResult().Count;
+                    _externalCatalogReaderWorker.RunWorker(null);
+                    break;
+                }
+                case BackgroundWorkerState.ExternalCatalogDone:
+                {
+                    progressBar.Value = progressBar.Maximum;
+                    label1.Text = "ExternalCatalogDone! Total = " + _externalCatalogReaderWorker.GetResult().Count;
+                    _clusterAnalyzerWorker.RunWorker(_actionAnalyzerWorker.GetResult(), _externalCatalogReaderWorker.GetResult());
+                    break;
+                }
+                case BackgroundWorkerState.ClusterAnalyzerDone:
+                {
+                    progressBar.Value = progressBar.Maximum;
+                    label1.Text = "ClusterAnalyzerDone! Total = " + _clusterAnalyzerWorker.GetResult().Count;
+                    _catalogCheckerWorker.RunWorker(_clusterAnalyzerWorker.GetResult());
+                    break;
+                }
+                case BackgroundWorkerState.CatalogCheckerDone:
+                {
+                    progressBar.Value = progressBar.Maximum;
+                    label1.Text = "CatalogCheckerDone! Total = " + _catalogCheckerWorker.GetResult().Count;
+                    break;
+                }
             }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            if (_worker.WorkerSupportsCancellation && _worker.IsBusy)
+            _actionAnalyzerWorker.StopWorker();
+            _externalCatalogReaderWorker.StopWorker();
+            _clusterAnalyzerWorker.StopWorker();
+            InitProgressBar(progressBar.Maximum);
+            label1.Text = "Stopped!";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+
+
+            //ExternalCatalogProxy.GetBooks();
+
+
+
+
+
+
+            // WRITER TO FILE
+            /*
+            using (StreamWriter writer = new StreamWriter("books.txt"))
             {
-                _worker.CancelAsync();
+                foreach (var element in _actionAnalyzer.GetResult().OrderByDescending(o => o.Value))
+                {
+                    writer.WriteLine(element.Key.ToString() + " Weight: " + element.Value + " Session: " + element.Key.Session);
+                }
             }
+            label1.Text = "Writer finished";
+            */
+
+
+
+
+
+            // GOOGLE
+            //string query = "ГОСТ гайки накидные";
+            //var customSearchService = new CustomsearchService(new BaseClientService.Initializer {ApiKey = GoogleApiKey});
+            //var listRequest = customSearchService.Cse.List(query);
+            //listRequest.Cx = SearchEngineId;
+            //var result = listRequest.Execute().Items;
+            //foreach (var item in result)
+            //{
+            //    label1.Text = item.Title;
+            //}
         }
     }
 }
