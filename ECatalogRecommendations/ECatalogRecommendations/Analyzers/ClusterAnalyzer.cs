@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using ECatalogRecommendations.Enums;
@@ -6,7 +7,7 @@ using ECatalogRecommendations.Models;
 
 namespace ECatalogRecommendations.Analyzers
 {
-    public class ClusterAnalyzer
+    public class ClusterAnalyzer : IClusterAnalyzer
     {
         private const double MaximumDistance = 0.4;
 
@@ -64,9 +65,9 @@ namespace ECatalogRecommendations.Analyzers
             }
         }
 
-        public Dictionary<ExternalCatalogBook, double> GetResult()
+        public List<KeyValuePair<ExternalCatalogBook, double>> GetResult()
         {
-            return _result;
+            return _result.OrderByDescending(pair => pair.Value).ToList();
         }
     }
 }

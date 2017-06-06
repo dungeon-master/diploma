@@ -1,11 +1,18 @@
-﻿namespace ECatalogRecommendations.Models
+﻿using System;
+using System.Xml.Serialization;
+
+namespace ECatalogRecommendations.Models
 {
+    [Serializable]
+    [XmlType(TypeName="ExternalCatalogBook")]
     public class ExternalCatalogBook
     {
-        public string Id { get; }
-        public string Title { get; }
-        public string Author { get; }
-        public string Keywords { get; }
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Keywords { get; set; }
+
+        public ExternalCatalogBook() { }
 
         public ExternalCatalogBook(string id, string title)
         {

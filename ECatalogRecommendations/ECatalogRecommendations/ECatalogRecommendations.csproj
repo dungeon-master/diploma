@@ -66,17 +66,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyzers\ClusterAnalyzer.cs" />
+    <Compile Include="Analyzers\IActionAnalyzer.cs" />
+    <Compile Include="Analyzers\IClusterAnalyzer.cs" />
     <Compile Include="Enums\BackgroundWorkerState.cs" />
     <Compile Include="DbEntities\book_distribution_event.cs" />
     <Compile Include="DbEntities\book_search_event.cs" />
     <Compile Include="DbEntities\ExternalCatalog.cs" />
     <Compile Include="DbModels\ExternalCatalogModel.cs" />
     <Compile Include="DbEntities\description_title.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Extensions\CustomKeyValuePair.cs" />
+    <Compile Include="ExternalCatalogSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ExternalCatalogSettings.Designer.cs">
+      <DependentUpon>ExternalCatalogSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSettings.Designer.cs">
+      <DependentUpon>GeneralSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DbEntities\FrontOfficeAction.cs" />
     <Compile Include="DbEntities\FrontOfficeSession.cs" />
@@ -84,21 +99,38 @@
     <Compile Include="DbModels\LibraryLogModel.cs" />
     <Compile Include="Analyzers\NGramAnalyzer.cs" />
     <Compile Include="DbModels\SearchArrayModel.cs" />
+    <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\ExternalCatalogBook.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Analyzers\ActionAnalyzer.cs" />
     <Compile Include="Models\SearchFields.cs" />
     <Compile Include="Models\SearchRequest.cs" />
     <Compile Include="Proxy\CatalogProxy.cs" />
     <Compile Include="Proxy\ExternalCatalogProxy.cs" />
+    <Compile Include="Settings\GeneralSettings.cs" />
     <Compile Include="Workers\ActionAnalyzerWorker.cs" />
     <Compile Include="Workers\Callbacks.cs" />
     <Compile Include="Workers\CatalogCheckerWorker.cs" />
     <Compile Include="Workers\ClusterAnalyzerWorker.cs" />
     <Compile Include="Workers\ExternalCatalogReaderWorker.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ExternalCatalogSettings.resx">
+      <DependentUpon>ExternalCatalogSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSettings.resx">
+      <DependentUpon>GeneralSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

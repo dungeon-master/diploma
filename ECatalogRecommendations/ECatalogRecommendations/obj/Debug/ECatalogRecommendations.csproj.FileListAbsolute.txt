@@ -15,3 +15,6 @@ C:\Антон\Программы\12 семестр (finish him)\Диплом\ECa
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Newtonsoft.Json.xml
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\Zlib.Portable.xml
 C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.MainForm.resources
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.ProgressDialog.resources
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.GeneralSettings.resources
+C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\obj\Debug\ECatalogRecommendations.ExternalCatalogSettings.resources

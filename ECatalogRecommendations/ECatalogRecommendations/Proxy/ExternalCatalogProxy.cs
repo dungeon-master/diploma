@@ -29,7 +29,10 @@ namespace ECatalogRecommendations.Proxy
                             e.Cancel = true;
                             break;
                         }
-                        books.Add(new ExternalCatalogBook(row.Id.ToString(), row.Title, row.Author, row.Keywords));
+                        if (!CatalogProxy.IsPresentInCatalog(row.Title))
+                        {
+                            books.Add(new ExternalCatalogBook(row.Id.ToString(), row.Title, row.Author, row.Keywords));
+                        }
                         count++;
                         if (count % reportValue == 0)
                         {
@@ -83,7 +86,10 @@ namespace ECatalogRecommendations.Proxy
                             break;
                         }
                     }
-                    books.Add(new ExternalCatalogBook(id, title, author, null));
+                    if (!CatalogProxy.IsPresentInCatalog(title))
+                    {
+                        books.Add(new ExternalCatalogBook(id, title, author, null));
+                    }
                     if (count % reportValue == 0)
                     {
                         worker.ReportProgress(count, BackgroundWorkerState.ExternalCatalogReportProgress);

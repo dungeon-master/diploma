@@ -13,7 +13,7 @@ namespace ECatalogRecommendations.Workers
         private const int ReportValue = 1000;
 
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private ActionAnalyzer _actionAnalyzer = new ActionAnalyzer();
+        private IActionAnalyzer _actionAnalyzer = new ActionAnalyzer();
 
         private readonly UpdateProgressBarCallback _updateProgressBar;
 

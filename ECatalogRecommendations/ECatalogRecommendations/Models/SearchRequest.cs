@@ -28,7 +28,7 @@ namespace ECatalogRecommendations.Models
             if (Parameters.TryGetValue(key, out result))
             {
                 result = result.Trim();
-                if (result.Length >= 2)
+                if (result.Length >= 3)
                 {
                     double number;
                     bool isNumber = double.TryParse(result, out number);

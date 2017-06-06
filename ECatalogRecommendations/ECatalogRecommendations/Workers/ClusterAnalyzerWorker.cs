@@ -10,7 +10,7 @@ namespace ECatalogRecommendations.Workers
     public class ClusterAnalyzerWorker
     {
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private readonly ClusterAnalyzer _clusterAnalyzer = new ClusterAnalyzer();
+        private readonly IClusterAnalyzer _clusterAnalyzer = new ClusterAnalyzer();
 
         private readonly InitProgressBarCallback _initProgressBar;
         private readonly UpdateProgressBarCallback _updateProgressBar;
@@ -48,7 +48,7 @@ namespace ECatalogRecommendations.Workers
             }
         }
 
-        public Dictionary<ExternalCatalogBook, double> GetResult()
+        public List<KeyValuePair<ExternalCatalogBook, double>> GetResult()
         {
             if (!_worker.IsBusy)
             {

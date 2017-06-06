@@ -8,7 +8,7 @@ namespace ECatalogRecommendations.Workers
 {
     public class ExternalCatalogReaderWorker
     {
-        private const int ReportValue = 1000;
+        private const int ReportValue = 10;
 
         private readonly BackgroundWorker _worker = new BackgroundWorker();
 
@@ -65,7 +65,7 @@ namespace ECatalogRecommendations.Workers
 
             if (_xmlPath != null)
             {
-                _result = ExternalCatalogProxy.GetBooks(_xmlPath, ReportValue / 10, ref worker, ref e);
+                _result = ExternalCatalogProxy.GetBooks(_xmlPath, ReportValue, ref worker, ref e);
             }
             else
             {

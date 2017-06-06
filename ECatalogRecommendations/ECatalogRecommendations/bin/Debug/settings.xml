@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<GeneralSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeletedRecommendations />
+  <Recommendations>
+    <Recommendation>
+      <Key>
+        <Id>6</Id>
+        <Title>Методы оптимизации. Практикум</Title>
+        <Author>Соболь</Author>
+      </Key>
+      <Value>64.567973528000039</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>7</Id>
+        <Title>Основные принципы проектирования и конструирования машин</Title>
+        <Author>А. И. Сидоров</Author>
+      </Key>
+      <Value>9.87112</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5</Id>
+        <Title>Справочник технолога-полиграфиста</Title>
+        <Author>Л. Г. Гранская, О. Б. Купцова</Author>
+      </Key>
+      <Value>1.82</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4</Id>
+        <Title>Проектирование кулисных механизмов в вычислительной среде MathCAD</Title>
+        <Author>Х.Т. Туранов, Ш.Х. Туранов, Б.Е. Татаринцев</Author>
+      </Key>
+      <Value>1.7552</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>10</Id>
+        <Title>Информационные технологии в бизнесе: практикум. Применение системы Decision в решении прикладных экономических задач</Title>
+        <Author>Лихтенштейн В.Е, Росс Г.В.</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>8</Id>
+        <Title>Человек и техника: очерки инженерной психологии</Title>
+        <Author>Б. Ф. Ломов</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+  </Recommendations>
+  <UseMaxForAnalyze>false</UseMaxForAnalyze>
+  <MaxValueForAnalyze>100</MaxValueForAnalyze>
+  <ExternalCatalogType>1</ExternalCatalogType>
+  <ExternalCatalogPath>C:\Антон\Программы\12 семестр (finish him)\Диплом\ECatalogRecommendations\ECatalogRecommendations\bin\Debug\ozon_2.xml</ExternalCatalogPath>
+</GeneralSettings>

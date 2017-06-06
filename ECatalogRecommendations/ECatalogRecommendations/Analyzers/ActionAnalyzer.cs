@@ -5,7 +5,7 @@ using ECatalogRecommendations.Models;
 
 namespace ECatalogRecommendations.Analyzers
 {
-    public class ActionAnalyzer
+    public class ActionAnalyzer : IActionAnalyzer
     {   
         private enum State
         {
@@ -90,6 +90,7 @@ namespace ECatalogRecommendations.Analyzers
                 { new StateTransition(State.Description, Transition.InvokeSimpleSearch), State.SearchResult },
                 { new StateTransition(State.Description, Transition.InvokeAdvancedSearch), State.SearchResult },
                 { new StateTransition(State.Description, Transition.AttemptOrder), State.Order },
+                { new StateTransition(State.Description, Transition.ViewDescription), State.Description },
                 { new StateTransition(State.Description, Transition.PrintRequirement), State.Requirement },
                 { new StateTransition(State.Description, Transition.ViewDigitalResources), State.DigitalResources }
             };
@@ -177,7 +178,10 @@ namespace ECatalogRecommendations.Analyzers
             }
             else if (newState == State.Description)
             {
-                _usefullness *= CoefViewDescription;
+                if (_currentState != State.Description)
+                {
+                    _usefullness *= CoefViewDescription;
+                }
             }
             else
             {

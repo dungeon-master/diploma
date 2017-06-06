@@ -11,7 +11,9 @@ namespace ECatalogRecommendations.Proxy
 {
     public static class CatalogProxy
     {
-        public static void QueryLog(ref ActionAnalyzer actionAnalyzer, int reportValue, 
+        public static int Maximum = 0;
+
+        public static void QueryLog(ref IActionAnalyzer actionAnalyzer, int reportValue, 
             ref BackgroundWorker worker, ref DoWorkEventArgs e)
         {
             try
@@ -22,6 +24,10 @@ namespace ECatalogRecommendations.Proxy
                     var table = db.FrontOfficeAction.AsNoTracking()
                         .OrderBy(s => s.FrontOfficeSessionId)
                         .ThenBy(d => d.ActionDateTime);
+                    if (Maximum > 0)
+                    {
+                        table = (IOrderedQueryable<DbEntities.FrontOfficeAction>) table.Take(Maximum);
+                    }
                     foreach (var row in table)
                     {
                         if (worker.CancellationPending)
@@ -50,6 +56,10 @@ namespace ECatalogRecommendations.Proxy
             using (var db = new LibraryLogModel())
             {
                 size = db.FrontOfficeAction.Count();
+            }
+            if (Maximum > 0 && Maximum < size)
+            {
+                size = Maximum;
             }
             return size;
         }
