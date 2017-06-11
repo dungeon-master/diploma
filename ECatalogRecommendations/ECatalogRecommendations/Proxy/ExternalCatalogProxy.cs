@@ -11,9 +11,12 @@ namespace ECatalogRecommendations.Proxy
 {
     public static class ExternalCatalogProxy
     {
+        public static Dictionary<char, HashSet<ExternalCatalogBook>> index;
+
         public static List<ExternalCatalogBook> GetBooks(int reportValue,
             ref BackgroundWorker worker, ref DoWorkEventArgs e)
         {
+            index = new Dictionary<char, HashSet<ExternalCatalogBook>>();
             List<ExternalCatalogBook> books = new List<ExternalCatalogBook>();
             int count = 0;
             try
@@ -31,7 +34,28 @@ namespace ECatalogRecommendations.Proxy
                         }
                         if (!CatalogProxy.IsPresentInCatalog(row.Title))
                         {
-                            books.Add(new ExternalCatalogBook(row.Id.ToString(), row.Title, row.Author, row.Keywords));
+                            ExternalCatalogBook book = new ExternalCatalogBook(row.Id.ToString(), row.Title, row.Author, row.Keywords);
+                            books.Add(book);
+                            char t = book.Title[0];
+                            char a = book.Author[0];
+                            if (index.ContainsKey(t))
+                            {
+                                index[t].Add(book);
+                            }
+                            else
+                            {
+                                index[t] = new HashSet<ExternalCatalogBook>();
+                                index[t].Add(book);
+                            }
+                            if (index.ContainsKey(a))
+                            {
+                                index[a].Add(book);
+                            }
+                            else
+                            {
+                                index[a] = new HashSet<ExternalCatalogBook>();
+                                index[a].Add(book);
+                            }
                         }
                         count++;
                         if (count % reportValue == 0)
@@ -51,6 +75,7 @@ namespace ECatalogRecommendations.Proxy
         public static List<ExternalCatalogBook> GetBooks(string xmlPath, int reportValue,
             ref BackgroundWorker worker, ref DoWorkEventArgs e)
         {
+            index = new Dictionary<char, HashSet<ExternalCatalogBook>>();
             List<ExternalCatalogBook> books = new List<ExternalCatalogBook>();
             XmlDocument xml = new XmlDocument();
             xml.Load(xmlPath);
@@ -86,18 +111,80 @@ namespace ECatalogRecommendations.Proxy
                             break;
                         }
                     }
-                    if (!CatalogProxy.IsPresentInCatalog(title))
+                    if (isDocumentValid(title, author) && !CatalogProxy.IsPresentInCatalog(title))
                     {
-                        books.Add(new ExternalCatalogBook(id, title, author, null));
+                        ExternalCatalogBook book = new ExternalCatalogBook(id, title, author, null);
+                        books.Add(book);
+                        foreach (var word in GetWords(book.Title))
+                        {
+                            char t = word[0];
+                            if (index.ContainsKey(t))
+                            {
+                                index[t].Add(book);
+                            }
+                            else
+                            {
+                                index[t] = new HashSet<ExternalCatalogBook>();
+                                index[t].Add(book);
+                            }
+                        }
+                        foreach (var word in GetWords(book.Author))
+                        {
+                            char t = word[0];
+                            if (index.ContainsKey(t))
+                            {
+                                index[t].Add(book);
+                            }
+                            else
+                            {
+                                index[t] = new HashSet<ExternalCatalogBook>();
+                                index[t].Add(book);
+                            }
+                        }
                     }
                     if (count % reportValue == 0)
                     {
                         worker.ReportProgress(count, BackgroundWorkerState.ExternalCatalogReportProgress);
                     }
                     count++;
+                    if (count == 400)
+                    {
+                        break;
+                    }
                 }
             }
             return books;
+        }
+
+        private static IEnumerable<string> GetWords(string s)
+        {
+            return s.Split(new[] { ' ', ',', '-' }, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        private static bool isDocumentValid(string title, string author)
+        {
+            bool result = false;
+            foreach (var ch in title)
+            {
+                if (char.IsLetter(ch))
+                {
+                    result = true;
+                    break;
+                }
+            }
+            if (result)
+            {
+                result = false;
+                foreach (var ch in author)
+                {
+                    if (char.IsLetter(ch))
+                    {
+                        result = true;
+                        break;
+                    }
+                }
+            }
+            return result;
         }
     }
 }

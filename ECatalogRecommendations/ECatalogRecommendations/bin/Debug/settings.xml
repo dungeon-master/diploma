@@ -4,51 +4,1035 @@
   <Recommendations>
     <Recommendation>
       <Key>
-        <Id>6</Id>
-        <Title>Методы оптимизации. Практикум</Title>
-        <Author>Соболь</Author>
+        <Id>30273545</Id>
+        <Title>Основы программирования и баз данных. Учебник</Title>
+        <Author>И. Г. Семакин</Author>
       </Key>
-      <Value>64.567973528000039</Value>
+      <Value>107.41600000000004</Value>
     </Recommendation>
     <Recommendation>
       <Key>
-        <Id>7</Id>
-        <Title>Основные принципы проектирования и конструирования машин</Title>
-        <Author>А. И. Сидоров</Author>
+        <Id>4990556</Id>
+        <Title>Элементы исследования операций</Title>
+        <Author>Е. Г. Давыдов</Author>
       </Key>
-      <Value>9.87112</Value>
+      <Value>76.188000000000017</Value>
     </Recommendation>
     <Recommendation>
       <Key>
-        <Id>5</Id>
-        <Title>Справочник технолога-полиграфиста</Title>
-        <Author>Л. Г. Гранская, О. Б. Купцова</Author>
+        <Id>30263202</Id>
+        <Title>Информационные технологии. Учебник</Title>
+        <Author>А. А. Хлебников</Author>
       </Key>
-      <Value>1.82</Value>
+      <Value>61.993999999999957</Value>
     </Recommendation>
     <Recommendation>
       <Key>
-        <Id>4</Id>
-        <Title>Проектирование кулисных механизмов в вычислительной среде MathCAD</Title>
-        <Author>Х.Т. Туранов, Ш.Х. Туранов, Б.Е. Татаринцев</Author>
+        <Id>32801256</Id>
+        <Title>Информационные технологии. Учебник</Title>
+        <Author>Хлебников А.А.</Author>
       </Key>
-      <Value>1.7552</Value>
+      <Value>53.58499999999998</Value>
     </Recommendation>
     <Recommendation>
       <Key>
-        <Id>10</Id>
-        <Title>Информационные технологии в бизнесе: практикум. Применение системы Decision в решении прикладных экономических задач</Title>
-        <Author>Лихтенштейн В.Е, Росс Г.В.</Author>
+        <Id>33695894</Id>
+        <Title>Операционные системы. Учебное пособие</Title>
+        <Author>С. Н. Дроздов</Author>
+      </Key>
+      <Value>52.143000000000015</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3963382</Id>
+        <Title>Компьютерная графика в дизайне</Title>
+        <Author>Д. Ф. Миронов</Author>
+      </Key>
+      <Value>29.37299999999999</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>27233972</Id>
+        <Title>Компьютерная графика. Учебное пособие</Title>
+        <Author>К. В. Постнов</Author>
+      </Key>
+      <Value>22.445000000000011</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>7420689</Id>
+        <Title>Программное обеспечение компьютерных сетей</Title>
+        <Author>О. В. Исаченко</Author>
+      </Key>
+      <Value>21.442999999999998</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4710769</Id>
+        <Title>Информационные системы и базы данных. Организация и проектирование</Title>
+        <Author>В. Ю. Пирогов</Author>
+      </Key>
+      <Value>19.555000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5035015</Id>
+        <Title>Информатика. Методические материалы к лабораторным работам</Title>
+        <Author>В. А. Клетин, Д. Ю. Клехо, А. Е. Сатунина</Author>
+      </Key>
+      <Value>16.495</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>23665202</Id>
+        <Title>Информационная безопасность открытых систем</Title>
+        <Author>Д. А. Мельников</Author>
+      </Key>
+      <Value>16.052000000000007</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5072900</Id>
+        <Title>Архитектура ЭВМ (+ CD-ROM)</Title>
+        <Author>А. П. Жмакин</Author>
+      </Key>
+      <Value>14.84</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136185785</Id>
+        <Title>Системы искусственного интеллекта. Учебное пособие</Title>
+        <Author>И. Г. Сидоркина</Author>
+      </Key>
+      <Value>14.603000000000002</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136536564</Id>
+        <Title>Интеллектуальные системы. Учебник</Title>
+        <Author>Л. Н. Ясницкий</Author>
+      </Key>
+      <Value>14.344999999999999</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>21140214</Id>
+        <Title>Вычислительные системы и сети</Title>
+        <Author>В. Ф. Мелехин, Е. Г. Павловский</Author>
+      </Key>
+      <Value>13.149</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136557885</Id>
+        <Title>Основы информационной безопасности. Учебное пособие</Title>
+        <Author>С. А. Нестеров</Author>
+      </Key>
+      <Value>12.920000000000002</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139107613</Id>
+        <Title>Информационная безопасность. Учебник и практикум</Title>
+        <Author>С. А. Нестеров</Author>
+      </Key>
+      <Value>12.665999999999999</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139240555</Id>
+        <Title>Интеллектуальные системы. Учебное пособие</Title>
+        <Author>В. М. Иванов</Author>
+      </Key>
+      <Value>11.903000000000008</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3834436</Id>
+        <Title>Архитектура компьютерных сетей</Title>
+        <Author>В. Н. Ручкин, В. А. Фулин</Author>
+      </Key>
+      <Value>11.257000000000001</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136287676</Id>
+        <Title>Микропроцессорные системы. Учебник</Title>
+        <Author>В. В. Гуров</Author>
+      </Key>
+      <Value>10.686999999999998</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>1355440</Id>
+        <Title>Информационная безопасность. Учебник для вузов</Title>
+        <Author>В. И. Ярочкин</Author>
+      </Key>
+      <Value>10.474000000000002</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>31119418</Id>
+        <Title>Информационная безопасность предприятия. Учебное пособие</Title>
+        <Author>Н. В. Гришина</Author>
+      </Key>
+      <Value>10.186000000000005</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>2821659</Id>
+        <Title>Операционная система Windows XP</Title>
+        <Author>М. Ю. Свиридова</Author>
+      </Key>
+      <Value>10.017</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4577163</Id>
+        <Title>Информатика. Курс лекций</Title>
+        <Author>В. Т. Безручко</Author>
+      </Key>
+      <Value>8.067</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140618639</Id>
+        <Title>Безопасность логистических информационных систем</Title>
+        <Author>Медведев В.А.</Author>
+      </Key>
+      <Value>7.6310000000000011</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3840588</Id>
+        <Title>Основы визуального моделирования</Title>
+        <Author>Д. В. Кознов</Author>
+      </Key>
+      <Value>6.783</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>13642727</Id>
+        <Title>Информационные технологии в офисе. Практические упражнения</Title>
+        <Author>М. Ю. Свиридова</Author>
+      </Key>
+      <Value>6.5519999999999987</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138149355</Id>
+        <Title>Типографика. Учебно-методический комплекс</Title>
+        <Author>С. И. Палиенко</Author>
+      </Key>
+      <Value>6.142</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3274340</Id>
+        <Title>Современные информационные технологии для гуманитария</Title>
+        <Author>А. Т. Хроленко, А. В. Денисов</Author>
+      </Key>
+      <Value>5.8440000000000012</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>31172800</Id>
+        <Title>Микропроцессорные системы. Учебное пособие</Title>
+        <Author>В. Я. Хартов</Author>
+      </Key>
+      <Value>5.753</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138584855</Id>
+        <Title>Интеллектуальные системы. Учебное пособие</Title>
+        <Author>Сесекин А.Н. - отв. ред.</Author>
+      </Key>
+      <Value>5.718</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140691327</Id>
+        <Title>Основы робототехники: Учебное пособие</Title>
+        <Author>А.А. Иванов</Author>
+      </Key>
+      <Value>5.6340000000000012</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3758063</Id>
+        <Title>Основы компьютерной техники</Title>
+        <Author>О. П. Новожилов</Author>
+      </Key>
+      <Value>5.5900000000000007</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136287885</Id>
+        <Title>Базовые и прикладные информационные технологии. Учебник</Title>
+        <Author>В. А. Гвоздева</Author>
+      </Key>
+      <Value>5.0440000000000005</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136815109</Id>
+        <Title>Микропроцессоры и их применение в системах управления</Title>
+        <Author>Новожилов Б.М.</Author>
+      </Key>
+      <Value>4.8340000000000005</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139735625</Id>
+        <Title>Вычислительная техника и информационные технологии. Учебное пособие</Title>
+        <Author>И. В. Тюрин</Author>
+      </Key>
+      <Value>4.8</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4882316</Id>
+        <Title>Основы информационных и телекоммуникационных технологий. Введение в компьютерную графику</Title>
+        <Author>В. Б. Попов</Author>
+      </Key>
+      <Value>4.737</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5426189</Id>
+        <Title>Архитектуры вычислительных систем</Title>
+        <Author>С. Л. Сергеев</Author>
+      </Key>
+      <Value>4.6489999999999991</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>7968881</Id>
+        <Title>Организация и обеспечение безопасности информационно-технологических сетей и систем</Title>
+        <Author>Д. А. Мельников</Author>
+      </Key>
+      <Value>4.55</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>25065136</Id>
+        <Title>Инженерная и компьютерная графика. Учебное пособие</Title>
+        <Author>Ю. И. Королев, С. Ю. Устюжанина</Author>
+      </Key>
+      <Value>4.418</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34093477</Id>
+        <Title>Корпоративные информационные системы. Учебно-методический комплекс</Title>
+        <Author>Е. А. Верещагина</Author>
+      </Key>
+      <Value>3.8919999999999995</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>13642855</Id>
+        <Title>Разработка отчетов в информационных системах</Title>
+        <Author>А. В. Маркин</Author>
+      </Key>
+      <Value>3.27</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140376535</Id>
+        <Title>Архитектура ЭВМ и вычислительные системы. Учебник</Title>
+        <Author>В. В. Степина</Author>
+      </Key>
+      <Value>3.2110000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138951562</Id>
+        <Title>Программирование на VBA в MS Excel. Учебное пособие</Title>
+        <Author>В. М. Лебедев</Author>
+      </Key>
+      <Value>3.2039999999999997</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>20066992</Id>
+        <Title>Архитектура ЭВМ и вычислительных систем</Title>
+        <Author>Н. В. Максимов, И. И. Попов, Т. Л. Партыка</Author>
+      </Key>
+      <Value>3.145</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>21140126</Id>
+        <Title>Вычислительные машины</Title>
+        <Author>В. Ф. Мелехин, Е. Г. Павловский</Author>
+      </Key>
+      <Value>3.0679999999999996</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>18687102</Id>
+        <Title>Технические средства информатизации. Практикум</Title>
+        <Author>О. Б. Лавровская</Author>
+      </Key>
+      <Value>2.8600000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3411523</Id>
+        <Title>Практикум по курсу "Информатика" (+ CD-ROM)</Title>
+        <Author>В. Т. Безручко</Author>
+      </Key>
+      <Value>2.6100000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139350442</Id>
+        <Title>Защита информации. Учебное пособие</Title>
+        <Author>А. А. Внуков</Author>
+      </Key>
+      <Value>2.4650000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3758067</Id>
+        <Title>Базы данных. Модели и языки</Title>
+        <Author>С. Д. Кузнецов</Author>
+      </Key>
+      <Value>2.412</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>135559033</Id>
+        <Title>Основы цифровой схемотехники. Учебное пособие</Title>
+        <Author>Н. П. Бабич, И. А. Жуков</Author>
+      </Key>
+      <Value>2.217</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138277110</Id>
+        <Title>Технические средства информатизации. Учебник</Title>
+        <Author>А. В. Назаров, В. П. Зверева</Author>
+      </Key>
+      <Value>2.0629999999999997</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139874837</Id>
+        <Title>Технические средства информатизации. Учебник</Title>
+        <Author>В. П. Зверева, А. В. Назаров</Author>
+      </Key>
+      <Value>2.0629999999999997</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4844055</Id>
+        <Title>Основы искусственного интеллекта</Title>
+        <Author>Е. В. Боровская, Н. А. Давыдова</Author>
+      </Key>
+      <Value>1.807</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>24946002</Id>
+        <Title>Аппаратное обеспечение ЭВМ. Учебник</Title>
+        <Author>В. Д. Сидоров, Н. В. Струмпэ</Author>
+      </Key>
+      <Value>1.8</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>26418037</Id>
+        <Title>Числовые расчеты в Excel. Учебное пособие</Title>
+        <Author>А. Н. Васильев</Author>
+      </Key>
+      <Value>1.5310000000000001</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>29203239</Id>
+        <Title>Программно-аппаратные средства защиты информации. Учебник</Title>
+        <Author>В. В. Платонов</Author>
+      </Key>
+      <Value>1.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>23101886</Id>
+        <Title>Прикладные информационные технологии. Учебное пособие</Title>
+        <Author>Е. Л. Федотова, Е. М. Портнов</Author>
+      </Key>
+      <Value>1.4490000000000003</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>135365416</Id>
+        <Title>Архитектура ЭВМ и систем. Учебное пособие</Title>
+        <Author>О. П. Новожилов</Author>
+      </Key>
+      <Value>1.3820000000000001</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140252891</Id>
+        <Title>Защита информации. Учебное пособие</Title>
+        <Author>Ю. М. Краковский</Author>
+      </Key>
+      <Value>1.377</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>35143827</Id>
+        <Title>Вычислительные системы, сети и телекоммуникации. Моделирование сетей. Учебное пособие</Title>
+        <Author>О. М. Замятина</Author>
+      </Key>
+      <Value>1.371</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5128624</Id>
+        <Title>Управление данными</Title>
+        <Author>А. В. Кузовкин, А. А. Цыганов, Б. А. Щукин</Author>
+      </Key>
+      <Value>1.25</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>6235048</Id>
+        <Title>Информационные технологии в профессиональной деятельности дизайнера</Title>
+        <Author>М. Е. Елочкин</Author>
+      </Key>
+      <Value>1.1720000000000002</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139953550</Id>
+        <Title>Базы данных. Проектирование, реализация и сопровождение. Теория и практика</Title>
+        <Author>Томас Коннолли, Каролин Бегг</Author>
+      </Key>
+      <Value>1.088</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138036346</Id>
+        <Title>Архитектура информационных систем. Учебное пособие</Title>
+        <Author>М. В. Рыбальченко</Author>
+      </Key>
+      <Value>1.0790000000000002</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>21438682</Id>
+        <Title>Информационная безопасность. История защиты информации в России</Title>
+        <Author>А. В. Бабаш, Е. К. Баранова, Д. А. Ларин</Author>
+      </Key>
+      <Value>1.053</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136470818</Id>
+        <Title>Советующие информационные системы в экономике. Учебное пособие</Title>
+        <Author>А. Н. Романов, Б. Е. Одинцов</Author>
+      </Key>
+      <Value>1</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>135481366</Id>
+        <Title>Криптографические методы защиты информации. Учебник и практикум</Title>
+        <Author>И. Н. Васильева</Author>
+      </Key>
+      <Value>0.972</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>137425602</Id>
+        <Title>Вычислительные системы, сети и телекоммуникации (для бакалавров)</Title>
+        <Author>Шевченко В.П.</Author>
+      </Key>
+      <Value>0.94400000000000006</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136425562</Id>
+        <Title>Криптографические методы защиты информации. Учебник</Title>
+        <Author>А. В. Бабаш, Е. К. Баранова</Author>
+      </Key>
+      <Value>0.934</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136287515</Id>
+        <Title>Криптографические методы защиты информации. Учебное пособие. Том 3</Title>
+        <Author>А. В. Бабаш</Author>
+      </Key>
+      <Value>0.931</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136287499</Id>
+        <Title>Криптографические методы защиты информации. Учебное пособие. Том 2</Title>
+        <Author>А. В. Бабаш</Author>
+      </Key>
+      <Value>0.931</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>24758951</Id>
+        <Title>Компьютерная графика. Учебное пособие</Title>
+        <Author>И. В. Григорьева</Author>
+      </Key>
+      <Value>0.922</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136815009</Id>
+        <Title>Алгебраические основы криптографии</Title>
+        <Author>Э. А. Применко</Author>
+      </Key>
+      <Value>0.903</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>137955397</Id>
+        <Title>Компьютеры и информационные технологии. Учебное пособие</Title>
+        <Author>С. И. Сухомлинова</Author>
+      </Key>
+      <Value>0.903</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>19932294</Id>
+        <Title>Практикум по информационным технологиям в профессиональной деятельности</Title>
+        <Author>Е. В. Михеева</Author>
+      </Key>
+      <Value>0.881</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136470734</Id>
+        <Title>Информационная безопасность и защита. Учебное пособие</Title>
+        <Author>Е. К. Баранова, А. В. Бабаш</Author>
+      </Key>
+      <Value>0.86199999999999988</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140170109</Id>
+        <Title>Информационное противоборство в моделях и задачах</Title>
+        <Author>С. П. Расторгуев</Author>
+      </Key>
+      <Value>0.838</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5320982</Id>
+        <Title>Криптографические протоколы. Основные свойства и уязвимости</Title>
+        <Author>А. В. Черемушкин</Author>
+      </Key>
+      <Value>0.838</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4176408</Id>
+        <Title>Информатика. Теория и практика</Title>
+        <Author>В. А. Острейковский, И. В. Полякова</Author>
+      </Key>
+      <Value>0.82</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>32801978</Id>
+        <Title>Базисные методы проектирования и анализа сетей ЭВМ. Учебное пособие</Title>
+        <Author>Л. И. Абросимов</Author>
+      </Key>
+      <Value>0.757</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34377072</Id>
+        <Title>Компьютерные сети. Принципы, технологии, протоколы. Учебник</Title>
+        <Author>В. Олифер, Н. Олифер</Author>
+      </Key>
+      <Value>0.75</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136175358</Id>
+        <Title>Прикладное программирование на Excel 2013. Учебное пособие</Title>
+        <Author>А. А. Казанский</Author>
+      </Key>
+      <Value>0.75</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>1817228</Id>
+        <Title>Программирование в стандарте POSIX. Курс лекций</Title>
+        <Author>В. А. Галатенко</Author>
+      </Key>
+      <Value>0.75</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34632933</Id>
+        <Title>Основы организационно-правовой защиты информации. Учебное пособие</Title>
+        <Author>М. А. Борисов, О. А. Романов</Author>
+      </Key>
+      <Value>0.7</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138153566</Id>
+        <Title>Основы локальных компьютерных сетей. Учебное пособие</Title>
+        <Author>Сергеев А.Н.</Author>
+      </Key>
+      <Value>0.7</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>32801196</Id>
+        <Title>Базы данных. Учебник</Title>
+        <Author>Кумскова И.А.</Author>
+      </Key>
+      <Value>0.7</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>30661849</Id>
+        <Title>Организация и обеспечение безопасности информационно-технологических сетей и систем. Учебник</Title>
+        <Author>Д. А. Мельников</Author>
+      </Key>
+      <Value>0.645</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34093492</Id>
+        <Title>Современные технологии информационной безопасности. Учебно-методический комплекс</Title>
+        <Author>М. В. Шаханова</Author>
+      </Key>
+      <Value>0.585</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34811970</Id>
+        <Title>Информационные системы. Учебник</Title>
+        <Author>С. А. Жданов, М. Л. Соболева, А. С. Алфимова</Author>
+      </Key>
+      <Value>0.56700000000000006</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>30457518</Id>
+        <Title>Системное администрирование персонального компьютера. Курс лекций</Title>
+        <Author>Н. А. Иванов</Author>
+      </Key>
+      <Value>0.55</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138036345</Id>
+        <Title>Архитектура информационных систем. Учебное пособие для вузов</Title>
+        <Author>М. В. Рыбальченко</Author>
+      </Key>
+      <Value>0.513</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>137851263</Id>
+        <Title>Безопасность и управление доступом в информационных системах. Учебное пособие</Title>
+        <Author>А. В. Васильков, И. А. Васильков</Author>
+      </Key>
+      <Value>0.502</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3565007</Id>
+        <Title>Информатика. Аппаратные средства персонального компьютера</Title>
+        <Author>В. Н. Яшин</Author>
       </Key>
       <Value>0.5</Value>
     </Recommendation>
     <Recommendation>
       <Key>
-        <Id>8</Id>
-        <Title>Человек и техника: очерки инженерной психологии</Title>
-        <Author>Б. Ф. Ломов</Author>
+        <Id>140212979</Id>
+        <Title>Занимательное программирование. Базы данных. Манга</Title>
+        <Author>Мана Такахаси</Author>
       </Key>
       <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>4578245</Id>
+        <Title>Администрирование в инофрмационных системах</Title>
+        <Author>Клейменов С.А., Мельников В.П., Петраков А.М.</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>24939736</Id>
+        <Title>История криптографии в Западной Европе в раннее новое время</Title>
+        <Author>И. А. Русецкая</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>18687089</Id>
+        <Title>Архитектура информационных систем</Title>
+        <Author>Б. Я. Советов, А. И. Водяхо, В. А. Дубенецкий, В. В. Цехановский</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>2305889</Id>
+        <Title>Технология разработки HTML-документов. Учебное пособие</Title>
+        <Author>П. П. Мельников</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>135305371</Id>
+        <Title>Дискретная математика и математические методы экономики с применением VBA Excel</Title>
+        <Author>О. А. Сдвижков</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138586074</Id>
+        <Title>Методы и алгоритмы обработки данных. Учебное пособие</Title>
+        <Author>А. А. Григорьев</Author>
+      </Key>
+      <Value>0.5</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>25824888</Id>
+        <Title>Теория информации и кодирование. Задачник. Учебное пособие</Title>
+        <Author>В. П. Цымбал</Author>
+      </Key>
+      <Value>0.489</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>3337992</Id>
+        <Title>Информатика. Фундаментальный курс. В 2 томах. Том 2. Информационные технологии и системы</Title>
+        <Author>Г. А. Сырецкий</Author>
+      </Key>
+      <Value>0.432</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140032247</Id>
+        <Title>Программирование на SQL. Учебник и практикум. В 2 частях. Часть 2</Title>
+        <Author>А. В. Маркин</Author>
+      </Key>
+      <Value>0.427</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139864961</Id>
+        <Title>Программирование на SQL. Учебник и практикум. В 2 частях. Часть 1</Title>
+        <Author>А. В. Маркин</Author>
+      </Key>
+      <Value>0.427</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138452802</Id>
+        <Title>Операционные системы. Учебник и практикум</Title>
+        <Author>Гостев И.М.</Author>
+      </Key>
+      <Value>0.375</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139036473</Id>
+        <Title>Операционные системы. Учебник и практикум</Title>
+        <Author>И. М.Гостев</Author>
+      </Key>
+      <Value>0.375</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>33301890</Id>
+        <Title>Компьютерная графика. Учебник и практикум</Title>
+        <Author>А. В. Боресков, Е. В. Шикин</Author>
+      </Key>
+      <Value>0.35</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139009186</Id>
+        <Title>Компьютерная графика. Учебник и практикум</Title>
+        <Author>А. В Боресков, Е. В. Шикин</Author>
+      </Key>
+      <Value>0.35</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>122122</Id>
+        <Title>Практикум по курсу `Информатика`. Работа в Windows, Word, Excel</Title>
+        <Author>В. Т. Безручко</Author>
+      </Key>
+      <Value>0.325</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>32871429</Id>
+        <Title>Криптографические методы защиты информации. Учебное пособие</Title>
+        <Author>С. В. Запечников, О. В. Казарин, А. А. Тарасов</Author>
+      </Key>
+      <Value>0.298</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>34114980</Id>
+        <Title>Криптографические методы защиты информации. Лабораторный практикум (+ CD-ROM)</Title>
+        <Author>Е. К. Баранова, А. В. Бабаш</Author>
+      </Key>
+      <Value>0.279</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139793623</Id>
+        <Title>Криптографические методы защиты информации. Учебник</Title>
+        <Author>А. Б. Лось, А. Ю. Нестеренко, М. И. Рожков</Author>
+      </Key>
+      <Value>0.256</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136252753</Id>
+        <Title>Компьютерные информационные технологии. Теоретические основы профессиональной деятельности. Учебное пособие</Title>
+        <Author>А. П. Елепин, С. В. Соколова</Author>
+      </Key>
+      <Value>0.252</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>30925249</Id>
+        <Title>Системы и сети передачи данных. Учебник</Title>
+        <Author>Д. А. Мельников</Author>
+      </Key>
+      <Value>0.25</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140809221</Id>
+        <Title>Криптографические методы защиты информации. Учебник</Title>
+        <Author>А.Б. Лось, А.Ю. Нестеренко, М.И. Рожков</Author>
+      </Key>
+      <Value>0.246</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>5022405</Id>
+        <Title>Информационные технологии. Курс лекций для гуманитарных вузов</Title>
+        <Author>С. С. Свириденко</Author>
+      </Key>
+      <Value>0.244</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139240469</Id>
+        <Title>Криптографические методы защиты информации. Учебник</Title>
+        <Author>С. В. Запечников, О. В. Казарин, А. А. Тарасов</Author>
+      </Key>
+      <Value>0.241</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>137816450</Id>
+        <Title>Основы использования и проектирования баз данных. Учебник</Title>
+        <Author>Илюшечкин В.М.</Author>
+      </Key>
+      <Value>0.236</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>140170610</Id>
+        <Title>Основы использования и проектирования баз данных. Учебник</Title>
+        <Author>В. М. Илюшечкин</Author>
+      </Key>
+      <Value>0.22699999999999998</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>32793821</Id>
+        <Title>Защита информации. Учебное пособие</Title>
+        <Author>А. П. Жук, Е. П. Жук, О. М. Лепешкин, А. И. Тимошкин</Author>
+      </Key>
+      <Value>0.207</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>139864663</Id>
+        <Title>Основы использования и проектирования баз данных. Учебник</Title>
+        <Author>Е. П. Попова, К. В. Решетникова</Author>
+      </Key>
+      <Value>0.202</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136289196</Id>
+        <Title>Компьютерная графика и web-дизайн. Учебное пособие (+ CD)</Title>
+        <Author>Т. И. Немцова, Т. В. Казанкова, А. В. Шнякин</Author>
+      </Key>
+      <Value>0.181</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>138139074</Id>
+        <Title>Информационные системы и технологии. Теория надежности. Учебное пособие</Title>
+        <Author>В. А. Богатырев</Author>
+      </Key>
+      <Value>0.16099999999999998</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>31172781</Id>
+        <Title>Пакеты прикладных программ. Учебное пособие</Title>
+        <Author>Э. В. Фуфаев, Л. И. Фуфаева</Author>
+      </Key>
+      <Value>0.133</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>22875327</Id>
+        <Title>Пакеты прикладных программ. Учебное пособие</Title>
+        <Author>С. В. Синаторов</Author>
+      </Key>
+      <Value>0.117</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>31119481</Id>
+        <Title>Информационные технологии. Учебник</Title>
+        <Author>О. Л. Голицына, Н. В. Максимов, Т. Л. Партыка, И. И. Попов</Author>
+      </Key>
+      <Value>0.114</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>136288888</Id>
+        <Title>Информационная безопасность конструкций ЭВМ и систем. Учебное пособие</Title>
+        <Author>Е. В. Глинская, Н. В. Чичварин</Author>
+      </Key>
+      <Value>0.038</Value>
+    </Recommendation>
+    <Recommendation>
+      <Key>
+        <Id>29437373</Id>
+        <Title>Безопасность информационных систем. Учебное пособие</Title>
+        <Author>В. В. Ерохин, Д. А. Погонышева, И. Г. Степченко</Author>
+      </Key>
+      <Value>0.031</Value>
     </Recommendation>
   </Recommendations>
   <UseMaxForAnalyze>false</UseMaxForAnalyze>

@@ -181,5 +181,10 @@ namespace ECatalogRecommendations
             externalCatalogSettings.SetSettings(_generalSettings);
             externalCatalogSettings.Show();
         }
+
+        private void gridResult_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnDelete.Enabled = gridResult.SelectedRows.Count > 0;
+        }
     }
 }

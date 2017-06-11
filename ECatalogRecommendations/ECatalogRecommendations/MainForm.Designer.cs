@@ -183,7 +183,7 @@
             this.gridResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridResult.Size = new System.Drawing.Size(571, 229);
             this.gridResult.TabIndex = 0;
-            this.gridResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridResult_CellContentClick);
+            this.gridResult.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridResult_CellClick);
             // 
             // columnId
             // 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using ECatalogRecommendations.Enums;
 using ECatalogRecommendations.Models;
+using ECatalogRecommendations.Proxy;
 
 namespace ECatalogRecommendations.Analyzers
 {
@@ -26,8 +27,64 @@ namespace ECatalogRecommendations.Analyzers
                     break;
                 }
                 double totalDistance = 0;
-                List<Tuple<ExternalCatalogBook, double>> distances = new List<Tuple<ExternalCatalogBook, double>>(); 
-                foreach (var book in books)
+                List<Tuple<ExternalCatalogBook, double>> distances = new List<Tuple<ExternalCatalogBook, double>>();
+
+                HashSet<ExternalCatalogBook> set = new HashSet<ExternalCatalogBook>();
+                string s;
+                if (request.Item1.GetParameter(SearchFields.Title, out s))
+                {
+                    foreach (var word in GetWords(s))
+                    {
+                        if (ExternalCatalogProxy.index.ContainsKey(word[0]))
+                        {
+                            foreach (var book in ExternalCatalogProxy.index[word[0]])
+                            {
+                                set.Add(book);
+                            }
+                        }
+                    }
+                }
+                if (request.Item1.GetParameter(SearchFields.Responsible, out s))
+                {
+                    foreach (var word in GetWords(s))
+                    {
+                        if (ExternalCatalogProxy.index.ContainsKey(word[0]))
+                        {
+                            foreach (var book in ExternalCatalogProxy.index[word[0]])
+                            {
+                                set.Add(book);
+                            }
+                        }
+                    }
+                }
+                if (request.Item1.GetParameter(SearchFields.Keywords, out s))
+                {
+                    foreach (var word in GetWords(s))
+                    {
+                        if (ExternalCatalogProxy.index.ContainsKey(word[0]))
+                        {
+                            foreach (var book in ExternalCatalogProxy.index[word[0]])
+                            {
+                                set.Add(book);
+                            }
+                        }
+                    }
+                }
+                if (request.Item1.GetParameter(SearchFields.SubjectText, out s))
+                {
+                    foreach (var word in GetWords(s))
+                    {
+                        if (ExternalCatalogProxy.index.ContainsKey(word[0]))
+                        {
+                            foreach (var book in ExternalCatalogProxy.index[word[0]])
+                            {
+                                set.Add(book);
+                            }
+                        }
+                    }
+                }
+
+                foreach (var book in set)
                 {
                     double distance = NGramAnalyzer.GetDistance(request.Item1, book);
                     if (distance <= MaximumDistance)
@@ -50,11 +107,11 @@ namespace ECatalogRecommendations.Analyzers
                     double weight = p * request.Item2;
                     if (_result.ContainsKey(distance.Item1))
                     {
-                        _result[distance.Item1] += weight;
+                        _result[distance.Item1] += Math.Round(weight, 3);
                     }
                     else
                     {
-                        _result.Add(distance.Item1, weight);
+                        _result.Add(distance.Item1, Math.Round(weight, 3));
                     }
                 }
                 count++;
@@ -68,6 +125,11 @@ namespace ECatalogRecommendations.Analyzers
         public List<KeyValuePair<ExternalCatalogBook, double>> GetResult()
         {
             return _result.OrderByDescending(pair => pair.Value).ToList();
+        }
+
+        private static IEnumerable<string> GetWords(string s)
+        {
+            return s.Split(new[] { ' ', ',', '-' }, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

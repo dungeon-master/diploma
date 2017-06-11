@@ -4,13 +4,14 @@ using System.ComponentModel;
 using ECatalogRecommendations.Analyzers;
 using ECatalogRecommendations.Enums;
 using ECatalogRecommendations.Models;
+using System.Diagnostics;
 
 namespace ECatalogRecommendations.Workers
 {
     public class ClusterAnalyzerWorker
     {
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private readonly IClusterAnalyzer _clusterAnalyzer = new ClusterAnalyzer();
+        private IClusterAnalyzer _clusterAnalyzer;
 
         private readonly InitProgressBarCallback _initProgressBar;
         private readonly UpdateProgressBarCallback _updateProgressBar;
@@ -33,6 +34,7 @@ namespace ECatalogRecommendations.Workers
         {
             if (!_worker.IsBusy)
             {
+                _clusterAnalyzer = new ClusterAnalyzer();
                 _requests = requests;
                 _books = books;
                 _initProgressBar(requests.Count);
@@ -65,8 +67,12 @@ namespace ECatalogRecommendations.Workers
             {
                 return;
             }
-          
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             _clusterAnalyzer.Analyze(_requests, _books, ref worker, ref e);
+            stopwatch.Stop();
+            double result = stopwatch.Elapsed.TotalSeconds;
+            string r = result.ToString();
         }
 
         private void OnProgressChanged(object sender, ProgressChangedEventArgs e)

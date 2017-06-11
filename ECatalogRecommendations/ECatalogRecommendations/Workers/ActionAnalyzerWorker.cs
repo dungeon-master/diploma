@@ -13,7 +13,7 @@ namespace ECatalogRecommendations.Workers
         private const int ReportValue = 1000;
 
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private IActionAnalyzer _actionAnalyzer = new ActionAnalyzer();
+        private IActionAnalyzer _actionAnalyzer;
 
         private readonly UpdateProgressBarCallback _updateProgressBar;
 
@@ -36,6 +36,7 @@ namespace ECatalogRecommendations.Workers
         {
             if (!_worker.IsBusy)
             {
+                _actionAnalyzer = new ActionAnalyzer();
                 _worker.RunWorkerAsync();
             }
             else
